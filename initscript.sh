@@ -32,8 +32,9 @@ rm keys.tar.gz.enc
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_rsa
 
-ssh -Tv git@github.com
+ssh -Tv git@github.com || true
 
 apt-get install -y make ntp nano
 
 ip addr
+
