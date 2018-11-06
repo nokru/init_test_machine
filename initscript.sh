@@ -32,3 +32,5 @@ ssh-add ~/.ssh/id_rsa
 
 ssh -Tv git@github.com
 
+apt-get install -y make ntp nano
+
