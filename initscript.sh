@@ -29,3 +29,6 @@ rm keys.tar.gz.enc
 
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_rsa
+
+ssh -Tv git@github.com
+
