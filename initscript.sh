@@ -3,6 +3,8 @@
 #  wget -qO- https://raw.githubusercontent.com/nokru/init_test_machine/master/initscript.sh | bash
 #
 
+export LC_ALL="en_US.UTF-8"
+
 apt-get install -y git curl
 
 cd /tmp
@@ -34,3 +36,4 @@ ssh -Tv git@github.com
 
 apt-get install -y make ntp nano
 
+ip addr
