@@ -28,4 +28,4 @@ rm -rf keys
 rm keys.tar.gz.enc
 
 eval "$(ssh-agent -s)"
-ssh-add -K ~/.ssh/id_rsa
+ssh-add ~/.ssh/id_rsa
