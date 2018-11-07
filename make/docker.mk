@@ -11,3 +11,7 @@ prune:: ##@Docker Prune docker all
 .PHONY: pruneall
 pruneall:: ##@Docker Prune docker system and images
 	@sudo su -c '$(DOCKER) system prune -a -f  && $(DOCKER) image prune -f && $(DOCKER) volume prune -f && docker images --quiet --filter=dangling=true | xargs --no-run-if-empty docker rmi'
+
+.PHONY: install-docker
+install-docker:: ##@Docker Prune docker system and images
+	wget -qO- https://get.docker.com | bash

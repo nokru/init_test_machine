@@ -18,6 +18,6 @@ install-phpmyadmin:: ##@Build Install phpmyadmin
 	apt-get install -y phpmyadmin
 
 .PHONY: install-lamp
-lamp:: ##@Build Install all LAMP Components
-lamp:: install-apache install-mysql install-php install-phpmyadmin
+install-lamp:: ##@Build Install all LAMP Components
+install-lamp:: install-apache install-mysql install-php install-phpmyadmin
 
