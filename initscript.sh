@@ -34,5 +34,9 @@ ssh-add ~/.ssh/id_rsa
 
 apt-get install -y make ntp nano
 
+cp /tmp/init_scripts/.gitignore /root/
+
+git remote set-url origin git@github.com:nokru/init_test_machine.git
+
 ip addr
 
