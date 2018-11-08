@@ -1,3 +1,5 @@
+#!/bin/bash
+
 #
 #  get this file by executing as root
 #  wget -qO- https://raw.githubusercontent.com/nokru/init_test_machine/master/initscript.sh | bash
