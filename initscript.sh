@@ -23,6 +23,7 @@ cd init_scripts
 openssl enc -aes-256-cbc -d -in keys.tar.gz.enc | tar xz
 
 cd keys
+mkdir -p /root/.ssh/
 cp * /root/.ssh/
 
 service ssh restart
