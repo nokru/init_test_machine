@@ -28,6 +28,10 @@ cd keys
 mkdir -p /root/.ssh/
 cp * /root/.ssh/
 
+echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
+echo "UseDNS no" >> /etc/ssh/sshd_config
+echo "UsePAM no" >> /etc/ssh/sshd_config
+
 service ssh restart
 
 cd ..
