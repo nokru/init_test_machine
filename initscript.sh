@@ -3,6 +3,8 @@
 #
 #  get this file by executing as root
 #  wget -qO- https://raw.githubusercontent.com/nokru/init_test_machine/master/initscript.sh | bash
+#  alternate/shorter
+#  wget -qO- https://bit.ly/2B4btIC | bash
 #
 
 export LC_ALL="en_US.UTF-8"
